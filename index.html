@@ -1,89 +1,125 @@
----
-layout: default
----
-<div class="home">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
-  <div class="scrim {% if site.cover %}has-cover{% endif %}">
-    <header class="site-header">
-      <h1 class="title">{{ site.title }}</h1>
-      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
-    </header>
-  </div>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>Nicholas Kern - Home</title>
+
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="author" content="Nicholas Kern" />
+<meta name="description" content="Personal Website" />
+<meta name="keywords" content="Nicholas Kern, Nick Kern, Nick, Kern, Berkeley, nkern, Michigan, astrophysics, astronomy, research, physics, website, personal" />
+<meta name="robots" content="index, follow, noarchive" />
+<meta name="googlebot" content="noarchive" />
+
+<link rel="shortcut icon" href="images/vla.ico" />
+<link rel="stylesheet" href="images/Colourise.css" type="text/css" />
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('body').css('background-image', 'url(images/DSC01406-min.JPG)');
+    });
+</script>
+
+</head>
+
+<body>
+
+<!-- wrap starts here -->
+<div id="wrap">
+
+	<!--header -->
+	<div id="header">			
+				
+		<h1 id="logo-text"><a title="">nicholas kern</a></h1>		
+
+		<!--
+		<p id="intro">
+		nkern'at'berkeley.edu 
+		</p>	
+		-->
+
+		<div  id="nav">
+			<ul>
+				<li id="current"><a href="index.html">home</a></li>
+				<li><a href="research.html">research</a></li>
+				<li><a href="code.html">code</a></li>
+			</ul>		
+		</div>	
+	
+		<!--	
+		<form id="quick-search" action="index.html" method="get" >
+			<p>
+			<label for="qsearch">Search:</label>
+			<input class="tbox" id="qsearch" type="text" name="qsearch" value="Search..." title="Start typing and hit ENTER" />
+			<input class="btn" type="submit" value="Submit" />
+			</p>
+		</form>
+		-->			
+				
+	<!--header ends-->					
+	</div>
+	
+	<!-- content-wrap starts -->
+	<div id="content-wrap">
+				
+		<div id="main">
+				
+			<h2>about me</h2>
+			<hr>
+
+			<p>
+			<img src="images/headshot-min.jpg" width=150px class="float-left" >
+			I am a second year grad student at the University of California, Berkeley, pursuing a PhD in Astronomy & Astrophysics.
+			My research explores the frontiers of the high redshift universe through radio observations of primordial hydrogen
+			and seeks to learn about the formation process of the first stars and galaxies.
+			</p>
+
+		<!-- main ends -->	
+		</div>
+		
+		<!-- sidebar starts -->
+		<div id="sidebar">
+		
+			<h3>contact</h3>
+			<hr>
+			<h4>Email: nkern{at}berkeley.edu</h4>
+			<br>
+				
+			<h3>links</h3>
+			<hr>
+			<ul class="sidemenu">
+				<li><a href="http://astro.berkeley.edu/" target="_blank">Berkeley Astro</a></li>
+				<li><a href="https://github.com/nkern" target="_blank">GitHub</a></li>
+			</ul>
+
+			<br>
+
+			<h3>documents</h3>
+			<hr>
+			<ul class="sidemenu">
+				<li><a href="documents/CV.pdf" target="_blank">CV</a></li>
+				<li><a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?library&libname=Publications&libid=52d49c2c24" target="_blank">ADS Query</a></li>
+			
+			
+		<!-- sidebar ends -->		
+		</div>
+		
+	<!-- content-wrap ends-->	
+	</div>
+
+	
+<!-- Footer -->
+<div id="footer-wrap">
+Updated: August, 2016
+</div>
+<!-- Footer ends-->
+
+	
+<!-- wrap ends here -->
 </div>
 
-<div class="wrapper">
-<ul class="post-list">
-  {% for post in paginator.posts %}
-  <li>
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
-      <div class="post-categories">
-      {% if post.categories.size > 0 %}in {% for cat in post.categories %}
-        {% if site.jekyll-archives %}
-        <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-        {% else %}
-        <span>{{ cat | capitalize }}</span>{% if forloop.last == false %}, {% endif %}
-        {% endif %}
-      {% endfor %}{% endif %}
-      </div>
-    </section>
-  </li>
-  {% if forloop.last == false %}
-  <hr>
-  {% endif %}
-  {% endfor %}
-</ul>
-
-<nav class="pagination" role="navigation">
-  <p>
-    {% if paginator.next_page %}
-    <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square fa-stack-2x"></i>
-        <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-    {% else %}
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-square fa-stack-2x"></i>
-      <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-    </span>
-    {% endif %}
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-      <a class="newer-posts" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-      {% else %}
-      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-      {% endif %}
-    {% else %}
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-square fa-stack-2x"></i>
-      <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-    </span>
-    {% endif %}
-  </p>
-  <p>
-    <a href="{{ site.baseurl }}/posts">View All Posts by Category</a>
-  </p>
-</nav>
-
-</div>
-</div>
+</body>
+</html>

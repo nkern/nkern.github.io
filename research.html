@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>Nicholas Kern</title>
+
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="author" content="Nicholas Kern" />
+<meta name="description" content="Personal Website" />
+<meta name="keywords" content="astronomy, research, physics" />
+<meta name="robots" content="index, follow, noarchive" />
+<meta name="googlebot" content="noarchive" />
+
+<link rel="shortcut icon" href="images/vla.ico" />
+<link rel="stylesheet" href="images/Colourise.css" type="text/css" />
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('body').css('background-image', 'url(images/millsim.jpg)');
+    });
+</script>
+
+</head>
+
+<body>
+
+<!-- wrap starts here -->
+<div id="wrap">
+
+	<!--header -->
+	<div id="header">			
+				
+		<h1 id="logo-text"><a title="">research</a></h1>
+
+		<!--
+		<p id="intro">
+		nkern'at'umich.edu 
+		</p>	
+		-->
+
+		<div  id="nav">
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li id="current"><a href="research.html">research</a></li>
+			</ul>		
+		</div>	
+	
+		<!--	
+		<form id="quick-search" action="index.html" method="get" >
+			<p>
+			<label for="qsearch">Search:</label>
+			<input class="tbox" id="qsearch" type="text" name="qsearch" value="Search..." title="Start typing and hit ENTER" />
+			<input class="btn" type="submit" value="Submit" />
+			</p>
+		</form>
+		-->		
+				
+	<!--header ends-->					
+	</div>
+        <div style="position:absolute;top:230px;left:500px">(Image Credit: <a href="http://www.mpa-garching.mpg.de/galform/virgo/millennium/" target="_blank">Millennium Simulation</a>)</div>
+	
+	<!-- content-wrap starts -->
+	<div id="content-wrap">
+				
+		<div id="main2">
+				
+			<h2>galaxy clusters</h2>
+			<hr>
+
+			<figure class="left-border">
+			<a href="images/Ensemble_Cluster_XY.png" target="_blank">
+			<img src="images/Ensemble_Cluster_XY.png" width=200px>
+			</a>
+			<figcaption>An example ensemble cluster in a simulation.</figcaption>
+			</figure>
+			<p>
+			Since 2012, I have been working with professor Chris Miller and graduate student Dan Gifford researching the dynamics of galaxy clusters. There are a few ways to derive the masses of galaxy clusters, however, each method is subject to certain weaknesses and uncertainties. The development of multiple techniques that can each derive galaxy cluster masses and are consistent with each other is therefore crucial to understand the large scale clustering of dark matter in our universe. One particular class of these techniques is called dynamical methods, which use the kinematic velocities and positions of galaxies orbiting a galaxy cluster's center of mass to trace out its gravitational potential. Within the spectrum of dynamical methods, we have been testing the limits of the <a href="http://adsabs.harvard.edu/abs/1999MNRAS.309..610D" target="_blank">Caustic Technique</a> against N-body simulations, like the Millennium Simulation, to try and improve its ability to derive galaxy cluster masses with high precision and accuracy. Simulations provide a unique opportunity for us to test our algorithms, in that, unlike the real universe, we know what the "real mass" of a simulated galaxy cluster, and can diagnose where our techinque fails and succeeds.
+			<br><br>
+		
+			Currently, I am working on finding ways to increase the precision and accuracy of the Caustic Technique by implementing a stacking routine. Two of the major sources of uncertainty in the Caustic Technique are correlated to 1. low numbers of observed galaxies in a cluster, and 2. a cluster's deviation from spherical symmetry. I am working to see if we can combine multiple clusters' kinematic data together and then measure one averaged Caustic mass for the entire ensemble system. This routine is called a "stacking" technique, and it helps to alleviates these two major sources of uncertainty that plague the Caustic Technique. I have so far found that, with stacking routine, we can measure an averaged Caustic mass to 30% better precision than an individual Caustic mass when galaxy sampling is sparse. 
+			<br><br>
+
+                        My Undergraduate Senior Thesis on this research:
+                        <br>
+                        <a href="documents/thesis.pdf" target="_blank">Increasing the Precision and Accuracy of Galaxy Cluster Dynamical Mass Estimation</a>
+                        <br>
+			<br>
+			Our recent publications:
+			<br>
+			<a href="http://adsabs.harvard.edu/abs/2013ApJ...773..116G" target="_blank">Gifford, Miller, & Kern 2013. "A Systematic Analysis of Caustic Methods for Galaxy Cluster Masses"</a>
+			<br>
+			<br>
+			Some of my posters:
+			<br>
+			<a href="documents/April2015_Poster.pdf" target="_blank">Stacking Algorithm Applied to C4 Cluster Sample</a>
+			<br>
+			<a href="documents/CI Days Poster.pdf" target="_blank">Cyber Infrastructure Days Poster</a>
+			<br>
+			<a href="documents/April2014_Poster.pdf" target="_blank">Introduction to Cluster Stacking Poster</a>
+			<br>
+			</p>
+
+			<h2>radio astronomy: protostars and starburst galaxies</h2>
+			<hr>
+
+			<figure class="left-border">
+			<a href="images/IMG_0370-min.JPG" target="_blank">
+			<img alt="VLA" src="images/IMG_0370-min.JPG" width=250px>
+			</a>
+			<figcaption>The Very Large Array consists of some 27 radio antennas working simultaneously.</figcaption>
+			</figure>
+			<p>
+			My experience in radio astronomy started with an <a href="http://www.nsf.gov/crssprgm/reu/" target="_blank">NSF REU</a> internship at the National Radio Astronomy Observatory (NRAO) in 2013, where I worked with Dr. Jeff Mangum on imaging interstellar formaldehyde in starburst galaxies with the Very Large Array (VLA). I presented a <a href="documents/AAS_Poster.pdf" target="_blank">poster</a> on it at the 223rd AAS meeting in January, 2013. Since then, I have done research in radio astronomy in a couple of other fields.
+
+			<br><br>
+			Another radio astronomy project I've worked on involves using Very Large Array observations to study star formation in the Serpens South protocluster. Serpens South is a recently discovered young stellar cluster with an unusually high amount of young protostars, suggesting it is in an early phase of cluster formation. It has been the focus of an extensive range of studies in the infrared and millimeter regimes, but has received little attention at radio wavelengths. I am currently using VLA data to trace compact emission from some deeply embedded protostars in the core of the main filament. Checkout the <a href="documents/SS_Poster.pdf" target="_blank">poster presentation</a> I gave on it at the 2015 AAS Conference. Another project I've worked on used ALMA data to trace the chemical composition of the Keplerian disk around the protostellar core L1527. I worked with Dr. Nami Sakai and Prof. Satoshi Yamamoto of the University of Tokyo, and used a robust deconvolution method to improve the angular resolution of our data. I learned a bit about the quantum mechanics of rotational spectroscopy, the astrochemistry of protostellar envelopes, and developed a research interest in protostellar disks.
+
+
+			</p>
+
+		<!-- main2 ends -->	
+		</div>
+		
+	<!-- content-wrap ends-->	
+	</div>
+
+<!-- Footer -->
+<div id="footer-wrap">
+Updated: August, 2015
+</div>
+<!-- Footer ends-->
+	
+<!-- wrap ends here -->
+</div>
+
+</body>
+</html>
+
