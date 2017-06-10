@@ -26,7 +26,7 @@ body {
 /* Links */
 a, a:active, a:link {
 	text-decoration: none;
-	color: #006193;			
+	color: #0090ff;			
 }
 a:visited {
 	text-decoration: none;
@@ -424,7 +424,7 @@ input.button {
 	padding: 15px 5px 10px 5px; 
 	font: normal 2em 'Trebuchet MS', Tahoma, Helvetica, Arial, sans-serif;
 	background: url(footer-top.jpg) no-repeat center bottom;
-	color: #fefefe;
+	color: #fff;
 }
 #sidebar h4 {
 	margin-top: 0px;
