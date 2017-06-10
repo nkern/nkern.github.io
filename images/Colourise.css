@@ -55,7 +55,8 @@ h2 {
 h3 {
 	font-size: 1.8em;
 	font-weight: normal;
-	padding: 20px 10px 5px 10px;	
+	padding: 20px 10px 5px 10px;
+    color: #895F30;
 }
 
 p, dl { padding: 10px; margin: 0; }
