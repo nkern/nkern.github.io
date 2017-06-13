@@ -53,12 +53,28 @@
     <div id="content-wrap">
     <div id="main2">
         <p>
-        I generally make code that I've written into publicly-available software for the astrophysics community. 
+        The following are codes I've written that are relevant to my research, which I've made publicly available for external use!
         </p>
 
         <h3>Emulators in Python</h3>
         <hr>
-      
+        Surrogate models, or emulators, are ways to mimic simulations that are otherwise too time intensive or computationally expensive to run directly.
+        They have gained traction in the astrophysical literature for producing parameter constraints on sophisticated models of astrophysical processes.
+        In <a href="https://arxiv.org/abs/1705.04688">Kern et al. 2017</a>, we created a Python-based emulator framework for use in relating 21cm intensity 
+        mapping survey data to sophisticated models of Cosmic Dawn and the Epoch of Reionization.
+        
+        We broke off the emulator code (which is completely independent of 21cm cosmology) for usage other than parameter estimation, but also for usage
+        outside of the context of 21cm cosmology.
+        This code is called <a href="https://github.com/nkern/emupy">emupy</a>.
+
+        For those interested in the code applied to 21cm cosmology, we wrote an external wrapper for handling data, constructing a likelihood function,
+        importing emupy and training the emulator, and calling a Markov-Chain Monte Carlo sampler.
+        This code is called <a href="https://github.com/nkern/pycape">pycape</a>.
+
+        If you are interested in using the code(s), both are documented (to some degree), and have worked examples to get you started.
+        If you use either codes in your research, please use the above citation.
+
+
     <!-- End main2 --> 
     </div>
     <!-- End content-wrap -->
