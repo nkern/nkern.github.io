@@ -478,11 +478,11 @@ input.button {
 	margin-top: 30px;
 	font: normal 1em 'Trebuchet MS', Tahoma, sans-serif;	
 	background: #101010 url(footer-top.jpg) no-repeat center top;
-	color: #555;
+	color: #101010;
 	width: 900px;
 	float: left;	
 	display: inline;
-	border-bottom: 50px solid #070707;		
+	border-bottom: 50px solid #101010;		
 }
 #footer-wrap h3 {
 	font: bold 2em/1.6em 'Trebuchet MS', Tahoma, sans-serif;
