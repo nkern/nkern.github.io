@@ -1,88 +1,136 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nicholas Kern</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="code.html">Code</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+					<li><a href="images/CV.pdf" target="_blank">CV</a></li>
+				</ul>
+			</nav>
 
-<head>
+		<!-- Home -->
+			<article id="top" class="wrapper style1" style="padding: 6em 0 6em 0">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image"><img src="images/headshot-cropped.jpg"/></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium" style="font-size:80%; color:#000000;">
+                            <h1>Nicholas Kern</h1>
+                            <p>
+                            I am a Ph.D. candidate in Astrophysics at the University of California, Berkeley.
+                            I work at the interface of theory and <a href="http://reionization.org/" target="_blank">radio observations</a> of Cosmic Dawn and the <a href="https://en.wikipedia.org/wiki/Reionization" target="_blank">Epoch of Reionization</a>.
+                            I received my B.S. at the University of Michigan, Ann Arbor in Physics and Astrophysics.
+                            </p>
+                            <p>
+                            <a href="mailto:nkern@berkeley.edu">nkern@berkeley.edu</a>
+                            |
+                            <a href="https://github.com/nkern" target="_blank">github.com/nkern</a>
+                            </p>
+                            <p>
+                            See below for some research highlights.
+                            </p>
+						</div>
+					</div>
+				</div>
+			</article>
 
-<title>Nicholas Kern - Home</title>
+		<!-- Work -->
+			<article id="work" class="wrapper style2" style="padding: 6em 0 6em 0">
+				<div class="container">
+					<header>
+						<h2>Research Highlights</h2>
+					</header>
+					<div class="row">
+						<div class="col-12" 
+                        style="text-align: left; background:#fff; padding: 2em 2em 2em 2em;
+                        box-shadow:inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+                        margin: 1em 0em 1em 0em; color:#000000;">
+                                <h1 style="font-size:200%">
+                                EoR 21cm Power Spectrum Limits with HERA Phase I</h1>
+                                <figure style="display: table;padding: 0em 1em 0em 0em;float:left">
+                                    <img src="images/hera_antenna.jpg" width=400px style="display:block"/>
+                                    <figcaption style="padding:.5em 0 0 0;line-height:1.3em">
+                                    A HERA Phase I antenna in the field in the Karoo Desert, South Africa.
+                                    </figcaption>
+                                </figure>
+                                <p style="font-size:120%">
+                                I am leading the effort to analyze HERA Phase I data and produce its first upper limit on the 21cm power spectrum at the EoR (HERA Collaboration et al. in prep.).
+                                Data analysis pipelines for 21cm science require ultra-precise control of systematics.
+                                I have worked on developing  novel calibration schemes for HERA given its observational constraints (Kern et al. in prep.), and have worked on instrumental systematic identification, modeling and removal (<a href="https://arxiv.org/abs/1909.11732" target="_blank">Kern et al. 2019a</a>,
+                                <a href="https://arxiv.org/abs/1909.11733" target="_blank">Kern et al. 2019b</a>).
+                                </p>
+                        </div>
+                        <div class="col-12" 
+                        style="text-align: left; background:#fff; padding: 2em 2em 2em 2em;
+                        box-shadow:inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+                        margin: 1em 0em 1em 0em; color:#000000;">
+                                <h1 style="font-size:200%">
+                                Cosmic Dawn Parameter Estimation with Emulators</h1>
+                                <figure style="display: table;padding: 0em 0em 0em 1em;float:right">
+                                    <img src="images/tri_plot_Apr15_13_11_24.png" width=300px style="display:block"/>
+                                    <figcaption style="padding:.5em 0 0 0;line-height:1.3em">
+                                    Emulated posterior distributions on LCDM, EoR star formation and Cosmic Dawn X-ray heating parameters with a 1000-hour mock HERA observation.
+                                </figcaption>
+                                </figure>
+                                <p style="font-size:120%">
+                                Connecting data to theoretical predictions from sophisticated and compute-intensive simulations is often prohibitively expensive using Markov Chain Monte Carlo (MCMC) samplers.
+                                A solution is to use machine learning methods to emulate the mapping of the simulation's input parameters to its output products with a less computationally expensive surrogate model. We explored this in the context of a cosmological 21cm simulation, and demonstrated a parameter constraint forecast jointly across cosmological LCDM, EoR star formation and Cosmic Dawn X-ray heating parameters using a full MCMC sampler and a 1000-hour mock HERA observation
+                                (<a href="https://iopscience.iop.org/article/10.3847/1538-4357/aa8bb4" target="_blank">Kern et al. 2017</a>).
+                                </p>
+                        </div>
+                        <!--
+                        <div class="col-12" 
+                        style="text-align: left; background:#fff; padding: 2em 2em 2em 2em;
+                        box-shadow:inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+                        margin: 1em 0em 1em 0em">
+                                <h1 style="font-size:200%">
+                                Weighing Galaxy Clusters for Cosmology</h1>
+                                <figure style="display: table;padding: 0em 1em 0em 0em;float:left">
+                                    <img src="images/2d_phasespace.png" width=400px style="display:block"/>
+                                    <figcaption style="padding:.5em .5em 0 0;line-height:1.3em">
+                                    A galaxy cluster phase space from a large N-body simulation with semi-analytic models of galaxy formation.
+                                    </figcaption>
+                                </figure>
+                                <p style="font-size:120%">Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+                        </div>
+                        -->
+ 					</div>                    
+				</div>
+                <br>
+                <a href="research.html" class=""><h1 style="font-size:150%">See more research</h1></a>
+			</article>
 
-<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-<meta name="author" content="Nicholas Kern" />
-<meta name="description" content="Personal Website" />
-<meta name="keywords" content="Nicholas Kern, Nick Kern, Nick, Kern, nkern, Michigan, astrophysics, astronomy, research, physics, website, personal, nkern.github.io" />
-<meta name="robots" content="index, follow, noarchive" />
-<meta name="googlebot" content="noarchive" />
+		<!-- Contact -->
+			<article id="contact" class="wrapper style4" style="padding: 3em 0 3em 0; font-size: 80%">
+    				<ul id="copyright">
+    					<li>&copy; Nicholas Kern. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    				</ul>
+			</article>
 
-<link rel="shortcut icon" href="images/vla.ico" />
-<link rel="stylesheet" href="images/Colourise.css" type="text/css" />
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('body').css('background-image', 'url(images/DSC01406-min.JPG)');
-    });
-</script>
-
-</head>
-
-<body>
-
-<!-- wrap starts here -->
-<div id="wrap">
-
-	<!--header -->
-	<div id="header">			
-		<h1 id="logo-text"><a title="">nicholas kern</a></h1>		
-		<div  id="nav">
-			<ul>
-				<li id="current"><a href="index.html">home</a></li>
-                <li><a href="research.html">research</a></li>
-                <li><a href="teaching.html">teaching</a></li>
-                <li><a href="code.html">code</a></li>
-				<li><a href="documents/CV.pdf">CV</a></li>
-			</ul>		
-		</div>	
-	</div>
-    <!--header ends-->
-
-	<!-- content-wrap starts -->
-	<div id="content-wrap">
-				
-		<div id="main">
-				
-			<h2>about me</h2>
-			<hr>
-
-			<p>
-			<img src="images/headshot-min.jpg" width=150px class="float-left" >
-			I am a graduate student in the Department of Astronomy at UC Berkeley. My research focus is the interface of theory and observations of 21cm cosmology at the epoch of reionization.
-			</p>
-
-		<!-- main ends -->	
-		</div>
-		
-		<!-- sidebar starts -->
-		<div id="sidebar">
-		
-			<h3>contact</h3>
-			<hr>
-			<h4>Email: nkern@berkeley.edu</h4>
-			<br>
-		<!-- sidebar ends -->		
-		</div>
-		
-	<!-- content-wrap ends-->	
-	</div>
-
-	
-<!-- Footer -->
-<div id="footer-wrap">
-</div>
-<!--	Footer ends-->
-
-	
-<!-- wrap ends here -->
-</div>
-
-</body>
+	</body>
 </html>
