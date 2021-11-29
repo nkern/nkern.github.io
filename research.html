@@ -34,7 +34,7 @@
                     </div>
 					<div class="row">
                         <div style="font-size:120%">
-                            My research interests lie at the interface of data analysis and theory of high redshift galaxy and structure formation. I am particularly interested in the development of analysis pipelines for intensity mapping experiments, and the connection of data to astrophysical and cosmological models. See below for some of my recent and ongoing projects and their selected publications.
+                            My research interests lie at the interface of data analysis and theory of high redshift galaxy and structure formation. Broadly, I am interested in cosmological data analysis, optimal signal estimation, radio interferometry, star and galaxy formation, and cosmological large scale structure. I am particularly interested in the development of analysis pipelines for intensity mapping experiments, and the robust connection of data to cosmological models. See below for some of my recent and ongoing projects and their selected publications.
                             See my <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A%22Kern%2C%20Nicholas%20S%22%20year%3A2010-2030&sort=date%20desc%2C%20bibcode%20desc" target="_blank">ADS library</a> for a full list of publications.
                         </div>
 
@@ -44,28 +44,48 @@
                         margin: 1em 0em 1em 0em; color:#000000;">
                                 <div id="limits" style="display:block; position:relative; top:-100px; visibility:hidden;"></div>
                                 <h1 style="font-size:200%;">
-                                First Limits on the 21cm Power Spectrum from HERA Phase I</h1>
-                               <figure style="display: table;padding: 0em 1em 0em 0em;float:right">
-                                    <img src="images/eor_limits.png" width=450px style="display:block"/>
+                                First Limits on the 21 cm Power Spectrum from HERA Phase I</h1>
+                                <figure style="display: table;padding: 0em 1em 0em 0em;float:right">
+                                    <img src="images/eor_limits.png" width=400px style="display:block"/>
                                     <figcaption style="padding:.5em 0 0 0;line-height:1.3em">
-                                    The recent HERA limits on the power spectrum (pink triangles) compared to existing limits. The z=7.9 limit is an order of magnitude improvement in sensitivity, driven largely by its handling of systematics.
+                                    The recent HERA limits on the power spectrum (pink triangles) compared to existing limits. The z=7.9 limit is an order of magnitude improvement in sensitivity, driven largely by its handling of systematics. Black curves show fiducial 21 cm signal models.
                                     </figcaption>
                                 </figure>
                                 <p style="font-size:120%">
-                                HERA Collaboration 2021
+                                HERA Collaboration 2021a
                                 |
                                 Accepted to ApJ
                                 |
                                 <a href="https://arxiv.org/abs/2108.02263" target="_blank">arxiv:2108.02263</a>
                                 <br><br>
-                                The <a href='http://reionization.org/' target='_blank'>Hydrogen Epoch of Reionization Array</a> (HERA) is a new radio interferometer that aims to detect the 21 cm signal from cosmic hydrogen at the Epoch of Reionization and Cosmic Dawn. I led the first analysis of HERA Phase I observations with a partial array deployment, which set new upper limits on the power spectrum at z=7.9 and z=10.4 (<a href="https://arxiv.org/abs/2108.02263" target="_blank">HERA Collaboration 2021</a>). Our z=7.9 limits improved upon existing limits by over an order of magnitude.
+                                The <a href='http://reionization.org/' target='_blank'>Hydrogen Epoch of Reionization Array</a> (HERA) is a new radio interferometer that aims to detect the 21 cm signal from cosmic hydrogen at the Epoch of Reionization and Cosmic Dawn. I led the first analysis of HERA Phase I observations with a partial array deployment, which set new upper limits on the power spectrum at z=7.9 and z=10.4 (pink triangles). Our z=7.9 limits improved upon existing limits by over an order of magnitude in sensitivity. These gains were due largely by the HERA analysis pipeline's careful accounting of systematics, and the development of new tools for systematic mitigation (see below).
                                 </p>
-                                <figure style="display: table;padding: 0em 1em 0em 0em;float:left">
-                                    <img src="images/hera_antenna.jpg" width=500px style="display:block"/>
+
+                                <br><br><br><br><br>
+                                <figure style="display: table;padding: 0em 1em 0em 0em;float:right">
+                                    <img src="images/hera_Ts.png" width=450px style="display:block"/>
                                     <figcaption style="padding:.5em 0 0 0;line-height:1.3em">
-                                    A HERA Phase I antenna in the field in the Karoo Desert, South Africa.
+                                    Constraints on the 21 cm spin temperature as a function of redshift (arrows).
+                                    With no astrophysical heating or cooling, the IGM follows a simple adiabatic
+                                    cooling relation (grey). The z=7.9 HERA limits rule out an adiabatically-cold
+                                    IGM at z=7.9, setting a lower bound on the X-ray efficiency of the first galaxies.
                                     </figcaption>
                                 </figure>
+                                <p style="font-size:120%">
+                                HERA Collaboration 2021b
+                                |
+                                Accepted to ApJ
+                                |
+                                <a href="https://arxiv.org/abs/2108.07282" target="_blank">arxiv:2108.07282</a>
+                                <br><br>
+                                This companion paper used a suite of theoretical methods to interpret HERA's
+                                first power spectrum upper limits and set constraints on the properties of the
+                                intergalactic medium (IGM) at redshifts 7.9 and 10.4. Principally, this analysis
+                                shows that the HERA limits require the IGM to be heated above its adiabatic cooling
+                                limit by z=7.9 (purple arrow). This implies that early X-ray sources from the first galaxies (e.g. from high-mass X-ray binaries) must have been more luminous than their
+                                local-universe analogues, and is consistent with a population of low-metallicity HMXB. This
+                                is the first independent constraint on the X-ray properties of these objects at Cosmic Dawn.
+                                </p>
                         </div>
 
                         <div class="col-12"
@@ -76,7 +96,7 @@
                                 <h1 style="font-size:200%;">
                                 Understanding the Limits of Gaussian Process Based Foreground Modeling</h1>
                                 <figure style="display: table;padding: 0em 1em 0em 0em;float:left">
-                                    <img src="images/gpr_window_low_noise_ell075.png" width=500px style="display:block"/>
+                                    <img src="images/gpr_window_low_noise_ell075.png" width=450px style="display:block"/>
                                     <figcaption style="padding:.5em 1em 0 0;line-height:1.3em">
                                     Simulated recovery of the 21 cm power spectrum with Gaussian process modeling, showing that without proper normalization it is difficult to recover the power spectrum at large line-of-sight wavemodes.
                                     </figcaption>
