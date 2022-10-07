@@ -38,8 +38,8 @@
                             faithfully accounting for covariant uncertainties between the signal and contaminants.
 
                             The BayesLIM codebase is currently under development and will be released in 2023.
-
                             <br><br>
+
                             Line intensity mapping (LIM)--in particular 21 cm LIM--is a theoretically powerful
                             probe of high redshift cosmology and astrophysics. However, this technique faces
                             the daunting challenge of mitigating astrophysical and instrumental contaminants
@@ -105,7 +105,17 @@
                             The BayesLIM framework is written in PyTorch, leveraging its fast automatic differentiation library and its convenient GPU-portability. This plot shows
                             the speed-up in evaluating the forward model and computing the posterior gradients for the CPU/GPU, and with BayesLIM's smart caching system. Together, these yield a nearly 50x speed-up in the gradient evaluation runtime relative to a standard CPU configuration.
 
+
                             <br><br><br><br><br><br><br><br><br>
+
+
+                            <figure style="display: table;padding: 0em 1em 0em 0em;float:left">
+                                <img src="images/movie_ps_beam15deg.gif" width=600px style="display:block"/>
+                            </figure>
+
+                            This shows a toy-model demonstration of a BayesLIM joint foreground + instrumental parameter optimization problem. We simulate point source foregrounds with unknown amplitudes, an unknown chromatic instrumental primary beam, and optimize them jointly until an underlying EoR signal in the data is revealed (Filtered Residual).
+
+                            <br><br><br><br><br><br><br><br><br><br>
 
                             More details about BayesLIM and its development to come shortly.
                             BayesLIM is currently supported by an XSEDE GPU grant (2022) on PSC's Bridges2 machine.
