@@ -1,0 +1,3 @@
+### <a class="table" href="https://nkern.github.io/Astro_9/">UC Berkeley Astro 9: Python for Research in Astrophysics</a>
+
+A 6-week intensive summer course at UC Berkeley. This course is an introduction to Python programming, computational physics, and data science with an emphasis on astrophysical contexts. It is aimed at beginning undergraduates looking to begin research in physics or astrophysics.
