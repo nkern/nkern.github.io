@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /code/
 title: code
-description: Some of the open-source projects I work on.
+description: <p>Some of the open-source projects I work on. See my <a href="https://github.com/nkern">GitHub page</a> for a more complete list.</p>
 nav: true
 nav_order: 3
 
@@ -17,6 +17,13 @@ profiles:
       <p>A software flowchart for the HERA analysis pipeline.</p>
 
   - align: left
+    image: py21cmnet.png
+    content: profile_py21cmnet.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <p>Cosmological image segmentation with convolutional neural networks.</p>
+
+  - align: right
     image: comparison_tri_plot.png
     content: profile_emupy.md
     image_circular: false # crops the image to make it circular

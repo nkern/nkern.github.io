@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /teaching/
 title: teaching
-description: See below for some of the courses that I've designed and taught.
+description: <p>See below for some of the courses that I've designed and taught.</p>
 nav: true
 nav_order: 3
 
