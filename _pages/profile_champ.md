@@ -1,0 +1,2 @@
+### <a class="table" href="https://github.com/HERA-Team/CHAMP_Bootcamp" target="_blank">Radio Astronomy Data Science Summer Bootcamp</a>
+A week-long intensive bootcamp crash course on the basics of radio astronomy, cosmology, intensity mapping and data analysis with a bent towards analyzing data from a premier experimental cosmology radio telescope. Organized and taught by HERA collaboration members, I designed and teach the lesson *Data Analysis II: Interferometric Calibration and Imaging*. For the summer 2021 bootcamp, I co-coordinated the camp and curriculum.
