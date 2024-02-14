@@ -16,7 +16,7 @@ profiles:
     more_info: >
       <p>A software flowchart for the HERA analysis pipeline.</p>
 
-  - align: left
+  - align: right
     image: py21cmnet.png
     content: profile_py21cmnet.md
     image_circular: false # crops the image to make it circular
