@@ -20,7 +20,7 @@ layout: default
   </header>
 
   <article>
-    <embed src="../assets/pdf/eduCV.pdf" width="600" height="500" 
+    <embed src="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" width="600" height="500" 
      type="application/pdf">
   </article>
 
