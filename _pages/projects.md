@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /research/
 title: research
-description: <p>My research interests lie at the interface of radio observations and theory of high redshift galaxy and structure formation, with data analysis and machine learning applications acting as a bridge. Broadly, I am interested in star and galaxy formation, large scale structure, and cosmological data analysis. I am particularly interested in the development of analysis pipelines for intensity mapping experiments, and the robust connection of data to cosmological models. See below for some of my recent and ongoing projects and their selected publications. See my <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A%22Kern%2C%20Nicholas%20S%22%20year%3A2010-2030&sort=date%20desc%2C%20bibcode%20desc" target="_blank">ADS library</a> for a full list of publications.</p>
+description: <p>My research interests lie at the interface of radio observations and theory of high redshift galaxy and structure formation, with data analysis and machine learning applications acting as a bridge. Broadly, I am interested in star and galaxy formation, large scale structure, and cosmological data analysis. I am particularly interested in the development of analysis pipelines for intensity mapping experiments, and the robust connection of data to cosmological models. See below for some of my recent and ongoing projects and their selected publications. See my <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A%22Kern%2C%20Nicholas%20S%22%20year%3A2010-2030&sort=date%20desc%2C%20bibcode%20desc" target="_blank">ADS library</a> for a full list of publications. Scroll to the bottom for some of my selected talks.</p> 
 nav: true
 nav_order: 1
 
@@ -35,4 +35,7 @@ profiles:
     image: gleam02_MFS_XX.png
     content: profile_abscal.md
     more_info: <p>A calibrated HERA image of the radio sky, showing a collection of radio galaxies.</p>
+
+  - align: right
+    content: profile_talks.md
 ---
