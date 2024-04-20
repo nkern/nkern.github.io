@@ -2,7 +2,7 @@
 layout: post
 title: Training a U-Net for cosmological image segmentation
 date: 2024-02-10
-tags: computer-vision, CNN, deep-learning
+tags: computer-vision CNN deep-learning
 author: Nicholas Kern
 mathjax: true
 description: 
