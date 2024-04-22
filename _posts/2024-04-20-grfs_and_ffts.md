@@ -13,7 +13,7 @@ mermaid:
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-There are lots of work studying Gaussian random fields (their definition, their statistical properties, and how to generate them) in the scientific literature. They are the underpinning of the study of cosmology, and thus come up often in cosmological and astrophysical analyses. In this post, I'd like to go through an applied example of how to generate a 3D Gaussian random field (GRF) in Python with a user-specified power spectrum. In addition, I also demonstrate how to numerically compute the field's Fourier coefficients in a volume-independent manner. See below for a few other nice references on GRFs:
+There is a lot of work studying Gaussian random fields (their definition, their statistical properties, and how to generate them) in the scientific literature. They are the underpinning of the study of cosmology and thus come up often in cosmological and astrophysical analyses. In this post, I'd like to go through an applied example of how to generate a 3D Gaussian random field (GRF) in Python with a user-specified power spectrum. In addition, I also demonstrate how to numerically compute the field's Fourier coefficients in a volume-independent manner. See below for a few other nice references on GRFs:
 
 * <a href="https://cosmo.nyu.edu/roman/courses/cosmology_2021/GaussianRandomFields.pdf" target="_blank">NYU Cosmology Notes</a>
 * <a href="https://garrettgoon.com/gaussian-fields/" target="_blank">garrettgoon.com/gaussian-fields</a>
@@ -32,9 +32,9 @@ Some preliminaries:
 ## 1. Simulating GRFs
 ---
 
-A Gaussian random field that is homogenous (translation invariant) and isotropic (rotation invariant) is defined uniquely by a power spectrum that is dependent only on the magnitude of the Fourier wavevector, and not its xyz components (i.e. depends only on <span>$$|k|$$</span> as opposed to <span>$$\langle k_x,\ k_y,\ k_z\rangle$$</span>). White Gaussian noise is a form of GRF that has power distributed equally on all size scales. We can therefore create a realization of a GRF by simply drawing independent samples from a Gaussian distribution. To then modify the distribution of power in the field, we can transform it into Fourier space, multiply by some function dependent on <span>$$|k|$$</span>, and then transform back. Note that a GRF can also be defined by a Fourier series with random phases, thus generating a white noise real space field achieves this goal.
+A Gaussian random field that is homogenous (statistically translation invariant) and isotropic (statistically rotation invariant) is defined uniquely by a power spectrum that is dependent only on the magnitude of the Fourier wavevector, and not it's xyz components (i.e. depends only on <span>$$|k|$$</span> as opposed to <span>$$\langle k_x,\ k_y,\ k_z\rangle$$</span>). White Gaussian noise is a form of GRF that has power distributed equally on all size scales. We can therefore create a realization of a GRF by simply drawing independent samples from a Gaussian distribution. To then modify the distribution of power in the field, we can transform it into Fourier space, multiply by some function dependent on <span>$$|k|$$</span>, and then transform back. Note that a GRF can also be defined by a Fourier series with random phases, thus generating a white noise real space field achieves this goal.
 
-First we'll generate a (real-valued) white noise box.
+First we'll generate a (real-valued) white noise 3D box.
 
 <details open>
 <summary>First import Python modules</summary>
@@ -82,7 +82,7 @@ pk_func = lambda k: 1*np.exp(-.5*(k-.150)**2/.01**2)
 {% endhighlight %}
 </details>
 
-Now we need to generate the wavenumbers in Fourier space of the box, then FFT the box, apply the pk shape and then transform back. Note that this is a FFT-and-multiply-and-iFFT process, so (based on the convolution theorem) we can also think of this as convolving the real space box with the power spectrum's real space kernel.
+Now we need to generate the (k_x,k_y,k_z) wavenumbers for each voxel of box in Fourier space, then FFT the box, apply the pk shape and then transform back. Note that this is a FFT-and-multiply-and-iFFT process, so (based on the convolution theorem) we can also think of this as convolving the real space box with the power spectrum's real space kernel.
 
 <details open>
 <summary>Simulating a Gaussian random field with specified power spectrum</summary>
@@ -220,7 +220,7 @@ gft = fft(grf, (dL, dL, dL))
 {% endhighlight %}
 </details>
 
-Note one thing the ortho convention leaves out is a factor of the voxel volume when taking the FFT, which acts as a normalizing factor. This volume is defined as <span>$$V_p = \Delta L_x\ \Delta L_y\ \Delta L_z$$</span>, which we multiply in by ourselves in the `fft()` function. Note that it takes the form <span>$$\Delta L^{3/2}$$</span> because the power spectrum is related to the square of the field. 
+One thing that the ortho convention leaves out is a factor of the voxel volume when taking the FFT, which acts as a normalizing factor. This volume is defined as <span>$$V_p = \Delta L_x\ \Delta L_y\ \Delta L_z$$</span>, which we multiply in by ourselves in the `fft()` function. Note that it takes the form <span>$$\Delta L^{3/2}$$</span> because the power spectrum is related to the square of the field. 
 
 Now that we have our Gaussian random field as a 3D box in Fourier space, we want to form its power spectrum, which is simply the square of the Fourier coefficients.
 
@@ -278,16 +278,17 @@ PK, NUM, BINS = gft_bin(gft, (N, N, N), (dL, dL, dL), K)
 </p>
 </figure>
 
+Figure 4 shows the resulting estimated power spectrum from our GRF (black), compared against our input analytic power spectrum curve (green), showing good agreement between the two! Next, we will repeat this process while varying the size of the box and of the voxel volume to ensure we can still correctly estimate the power spectrum of the field.
 
 ## 3. Ensuring invariance with respect to box size
 ---
 
-Now we want to ensure that the computed power spectrum of the field is indeed the same regardless of the size of the box we use to take the FFT and the spacing of the voxels (i.e. the voxel volume). Also related is the usage of any tapering (or windowing) functions applied to the real space box before taking the Fourier transform  (which modulates the effective volume of the box).
+Now we want to ensure that the computed power spectrum of the field is indeed the same regardless of the size of the box we use to take the FFT and the spacing of the voxels (i.e. the voxel volume). Also related is the application of any tapering (aka windowing or apodization) functions applied to the real space box before taking the Fourier transform  (which modulates the effective volume of the box).
 
-**Different sized boxes** -- first let's look at running our GRF power spectrum code through the same simulated box, but now having modulated the size of the box and the volume of the voxels. We will look at three cases
+**Different sized boxes** -- first let's look at running our GRF power spectrum code through the same simulated box, but now having changed the size of the box and/or the volume of the voxels. We will look at three cases
 
 * Take a quadrant of the original box (i.e. smaller box size)
-* Take every other voxel along x,y,z (i.e. making the voxels twice as long and eight times as large)
+* Take every other voxel along x,y,z (i.e. making the voxels eight times as large)
 * A mix of both of these
 
 <details open>
@@ -318,9 +319,9 @@ PK_3, NUM, BINS = gft_bin(gft, (300, N//2, 300), (dL, dL*2, dL), K)
 </p>
 </figure>
 
-Figure 5 shows that the power spectra of the various boxes all agree with each other (to first order, see the caption), thus our goal of ensuring volume and voxel-independent measurements of the power spectrum has been achieved. Next we will look at another, slightly more complicated way of altering the effective size of the box via a windowing function.
+Figure 5 shows that the power spectra of the various boxes all agree with each other (to first order, see the caption), thus our goal of ensuring volume and voxel-size-independent measurements of the power spectrum has been achieved. Next we will look at another, slightly more complicated way of altering the effective size of the box via a tapering function, which will also help expalain the minor discrepancies seen in Figure 5.
 
-**Tapering or windowing functions**--often in specral analysis we apply what's called a tapering (or windowing, or apodization) function to the signal before taking its Fourier transform. This is needed when working with real data that is often not strictly periodic or harmonic, which violates the key assumptions of the discrete Fourier transform, and thus creates the well-known "ringing" phenomenon in Fourier space. The application of a windowing function makes our non-periodic signal more closely obey these assumptions, reducing the spectral leakage observed in Fourier space (in signal processing speak, we say that the signal sidelobes are reduced). The trade-off is a wider "main lobe" (the width of the main signal feature in Fourier space). Another way of thinking about a tapering or windowing function is that you are reducing the "effective size" of the box in a smooth way, rather than the hard cutoff we used above by looking at just a chunk of the box. This means we need to take this reduced volume into account, which can be done by computing the effective bandwidth of the tapering function, shown below.
+**Tapering (aka windowing or apodization) functions**--often in specral analysis we apply what's called a tapering (or windowing, or apodization) function to the signal before taking its Fourier transform. This is needed when working with real data that is often not strictly periodic, which violates the key assumptions of the discrete Fourier transform and creates the well-known "ringing" phenomenon in Fourier space. The application of a windowing function makes our non-periodic signal more closely obey these assumptions, reducing the spectral leakage observed in Fourier space (in signal processing speak, we say that the signal sidelobes are reduced). The trade-off is a wider "main lobe" (the width of the main signal feature in Fourier space). Another way of thinking about a tapering or windowing function is that you are reducing the "effective size" of the box in a smooth way, rather than the hard cutoff we used above by looking at just a chunk of the box. This means we need to take this reduced volume into account, which can be done by computing the effective bandwidth of the tapering function, shown below.
 
 <details open>
 <summary>Compute equivalent bandwidth for Blackman-Harris tapering function</summary>
@@ -347,7 +348,7 @@ PK, NUM, BINS = gft_bin(gft, (N, N, N), (dL, dL, dL), K)
 {% endhighlight %}
 </details>
 
-Thus we have created normalized taper functions that account for the smaller box volume induced by the tapering. Below we show what the tapering does to the simulated GRF box in Figure 6.
+Thus we have created normalized taper functions that account for the smaller box volume induced by the tapering. We show what the tapering does to the simulated GRF box below in Figure 6.
 
 <figure>
 <center>
