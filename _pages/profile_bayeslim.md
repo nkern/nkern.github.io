@@ -1,2 +1,2 @@
 ### <a class="table" href="/bayeslim">The BayesLIM Project</a>
-The BayesLIM project is in active development. More to come soon. Click on the title above to learn more.
+The BayesLIM project is in active development. More to come soon. Click on the title above to learn more, or see this paper (<a href="https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_154.pdf" target="_blank">Kern 2023</a>) from the NeurIPS 2023 ML for Sciences Workshop.
