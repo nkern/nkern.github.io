@@ -138,8 +138,8 @@ And that's basically it for simulating the Gaussian random field. Let's look at 
 
 <figure>
 <center>
-    <img src="../../../assets/posts/grfs/white_noise.png" alt="white_noise" width=400/>
-    <img src="../../../assets/posts/grfs/grf.png" alt="grf" width=400/>
+    <img src="../../../assets/posts/grfs/white_noise.png" alt="white_noise" width=350/>
+    <img src="../../../assets/posts/grfs/grf.png" alt="grf" width=350/>
 </center>
 <p style="text-align: left;">
 <b>Figure 1</b> | Left: A white Gaussian noise field generated from `sim_box()` in real space. Right: The white noise box passed through a convolutional kernel defined by our chosen power spectrum function `pk_func()`.
@@ -150,8 +150,8 @@ We can also look at the 3D box in Fourier space, which visualizes the power spec
 
 <figure>
 <center>
-    <img src="../../../assets/posts/grfs/pk_func.png" alt="pk_func" width=400/>
-    <img src="../../../assets/posts/grfs/grf_kspace.png" alt="grf_kspace" width=400/>
+    <img src="../../../assets/posts/grfs/pk_func.png" alt="pk_func" width=350/>
+    <img src="../../../assets/posts/grfs/grf_kspace.png" alt="grf_kspace" width=350/>
 </center>
 <p style="text-align: left;">
 <b>Figure 2</b> | Left: An analytic representation of the single-tone power spectrum function in Fourier k_x & k_y space (with k_x=k_y=0 at the center). Right: The absolute-value of the simulated GRF in Fourier k_x & k_y space. Note that its amplitude resembles the left plot but, because this is a single realization of the field, it has some amount of stochasticity.
@@ -271,7 +271,7 @@ PK, NUM, BINS = gft_bin(gft, (N, N, N), (dL, dL, dL), K)
 
 <figure>
 <center>
-    <img src="../../../assets/posts/grfs/pk_estimate.png" alt="dft" width=800/>
+    <img src="../../../assets/posts/grfs/pk_estimate.png" alt="dft" width=700/>
 </center>
 <p style="text-align: left;">
 <b>Figure 4</b> | Plotting the estimated and binned power spectrum (black) against the input analytic function used for drawing the field (green).
@@ -312,7 +312,7 @@ PK_3, NUM, BINS = gft_bin(gft, (300, N//2, 300), (dL, dL*2, dL), K)
 
 <figure>
 <center>
-    <img src="../../../assets/posts/grfs/pk_estimate2.png" alt="dft" width=800/>
+    <img src="../../../assets/posts/grfs/pk_estimate2.png" alt="dft" width=700/>
 </center>
 <p style="text-align: left;">
 <b>Figure 5</b> | Power spectra for the different boxes (1, 2, & 3), compared against the original input analytic P(k). We see that (to first order), the power spectra all agree with each other. Note that the pink and orange curves are slightly modulated by the fact that the smaller box leads to poorer k-space resolution, which acts as an effective rolling average of the field in k-space, thus slightly lowering and widening the peak. We will see this same effect below but with a slightly different cause.
@@ -398,7 +398,7 @@ plt.xlabel(r'$|k|$ [Mpc$^{-1}$]', fontsize=14); plt.ylabel(r'$P(k)$ [arbitrary u
 
 <figure>
 <center>
-    <img src="../../../assets/posts/grfs/windowed_pk.png" alt="dft" width=800/>
+    <img src="../../../assets/posts/grfs/windowed_pk.png" alt="dft" width=700/>
 </center>
 <p style="text-align: left;">
 <b>Figure 7</b> | The estimated power spectra from the tapered box (black), the input analytic power spectrum (green) and the input analytic function convolved by the taper's window function (red). The appropriate comparison is not black to green but black to red, which we can see is in good agreement.
