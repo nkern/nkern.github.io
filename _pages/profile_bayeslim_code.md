@@ -7,6 +7,6 @@
 
 A framework for building end-to-end, differentiable Bayesian forward models for solving the toughest inverse problems in line intensity mapping (LIM) cosmology.
 Currently, the field of radio LIM cosmology is at a crossroads: we now have loads of experimental data that could shed light on unsolved problems in astrophysics and cosmology; however, there are massive contaminants in the data the prevent us from robustly extracting this information.
-To tackle this, I have developed the first end-to-end, differentiable Bayesian forward model for LIM science that will try to break new ground in extracting the long sought-after cosological signals these experiemntal datasets.
-This approach is made possible by the advent of high-level automatic differentiation software libraries and large-memory, high-performance graphics processing units for accelerating this computationally demanding approach.
+To tackle this, I have developed the first end-to-end, differentiable Bayesian forward model for LIM science that will try to break new ground in extracting the long sought-after cosmological signals in these noisy and messy experimental datasets.
+This approach is made possible by the advent of high-level automatic differentiation software libraries and large-memory, high-performance graphics processing units (GPUs) for accelerating this computationally demanding approach.
 Learn more about BayesLIM <a href="/bayeslim">here</a>, or at its documentation linked above.
