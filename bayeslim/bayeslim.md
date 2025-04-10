@@ -4,7 +4,9 @@ title: The BayesLIM Project
 permalink: /bayeslim/
 ---
 
-The Bayesian Line Intensity Mapping (BayesLIM) project leverages advances in machine learning software and hardware to deliver a comprehensive Bayesian forward model for cosmological intensity mapping experiments. Its goal is to enable the first robust detection of the high redshift 21 cm signal, while faithfully accounting for covariant uncertainties between the signal and contaminants. The BayesLIM codebase is currently under development and will be released in 2024. For now, see an intial proof-of-concept (<a href="https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_154.pdf" target="_blank">Kern 2023</a>) presented at the NeurIPS 2023 "ML for the Physical Sciences" workshop.
+The Bayesian Line Intensity Mapping (BayesLIM) project leverages advances in machine learning software and hardware to deliver an end-to-end, differentiable Bayesian forward model for cosmological intensity mapping experiments. Its goal is to enable the first robust detection of the high redshift 21 cm signal, while faithfully accounting for covariant uncertainties between the signal and foreground and instrumental systematics. See the paper (<a href="https://arxiv.org/abs/2504.07090" target="_blank">Kern 2025</a>) for more details. To see the code checkout the <a href="https://github.com/BayesLIM/BayesLIM" target="_blank">GitHub repo</a> or see the <a href="https://bayeslim.readthedocs.io/en/latest/" target="_blank">documentation</a>.
+
+
 
 <div class="text-center">
   {%- include figure.html
@@ -58,5 +60,3 @@ The BayesLIM framework is written in PyTorch, leveraging its fast automatic diff
     </p>
   </div>
 </div>
-
-More details about BayesLIM and its development to come soon.
