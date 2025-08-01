@@ -1,17 +1,25 @@
-#### Education
+[Updated July, 2025]
+
+### Education
 - Ph.D., Astrophysics, University of California, Berkeley, 2020
 - M.S., Astrophysics, University of California, Berkeley, 2017
 - B.S., Physics, Astronomy, University of Michigan, 2015
 
-#### Appointments
+---
+
+### Appointments
 - NASA Hubble Fellow, University of Michigan, 2023 -- present
 - Pappalardo Fellow, Massachusetts Institute of Technology, 2020 -- 2023
 
-#### Publications
+---
 
-Lead author (9), and \*student-advised (3). See my <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A%22Kern%2C%20Nicholas%20S%22%20year%3A2010-2030&sort=date%20desc%2C%20bibcode%20desc" target="_blank">ADS library</a> for a full list of publications.
+### Selected Publications
+
+Lead author (9), \*student-advised (4). See my <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A%22Kern%2C%20Nicholas%20S%22%20year%3A2010-2030&sort=date%20desc%2C%20bibcode%20desc" target="_blank">ADS library</a> for a full list of publications.
 
 **Kern, N.** 2025, "A Differentiable, End-to-End Forward Model for 21 cm Cosmology: Estimating the Foreground, Instrument, and Signal Joint Posterior." <a href="https://academic.oup.com/mnras/article/541/2/687/8169320" target="_blank">MNRAS 541 687K</a>, <a href="https://arxiv.org/abs/2504.07090" target="_blank">arXiv:2504.07090</a>
+
+\*Pascua, R., Martinot, Z., Liu, A., Aguirre, J., **Kern, N.** et al. 2024, "A Generalized Method for Characterizing 21-cm Power Spectrum Signal Loss from Temporal Filtering of Drift-scanning Visibilities." <a href="https://iopscience.iop.org/article/10.3847/1538-4357/adc37d" target="_blank">ApJ 985 127P</a>, <a href="https://arxiv.org/abs/2410.01872" target="_blank">arXiv:2410.01872</a>
 
 \*Charles, N., **Kern, N.**, Bernardi, G. et al. 2024, "Mitigating calibration errors from mutual coupling with time-domain filtering." <a href="https://academic.oup.com/mnras/article/534/4/3349/7815199" target="_blank">MNRAS 534 3349C</a>, <a href="https://arxiv.org/abs/2407.20923" target="_blank">arXiv:2407.20923</a>
 
@@ -34,3 +42,51 @@ HERA Collaboration 2022, including **Kern, N.** (lead author), "First Results fr
 **Kern, N.**, Liu, A., Parsons, A. et al. 2017, "Emulating Simulations of Cosmic Dawn for 21 cm Power Spectrum Constraints on Cosmology, Reionization and X-ray Heating." <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aa8bb4" target="_blank">ApJ 848 23</a>, <a href="https://arxiv.org/abs/1705.04688" target="_blank">arXiv:1705.04688</a>
 
 **Kern, N.**, Keown, J., Tobin, J., et al. 2016, "Radio properties of young stellar objects in the Serpens South Infrared Dark Cloud." <a href="https://iopscience.iop.org/article/10.3847/0004-6256/151/2/42" target="_blank">AJ 151 42</a>, <a href="https://arxiv.org/abs/1511.09082" target="_blank">arXiv:1511.09082</a>
+
+---
+
+### Selected Talks
+
+##### Upcoming
+
+| Event        | Date           | Type |
+| :----------- | :------------  | :--- |
+| Cosmo-25 Conference <br> Pittsburgh, PA | October, 2025 | contributed talk |
+| NASA Hubble Symposium <br> Baltimore, MD | October, 2025 | contributed talk |
+| 21cm Global Signal Conference <br> Caltech, Pasadena, CA | September, 2025 | contributed talk |
+| Astronomy Colloquium <br> U. Toledo, Toledo, OH | September, 2025 | invited talk |
+| HEP-Astro Seminar <br> U. Michigan, Ann Arbor, MI | September, 2025 | invited talk |
+| Astrophysics & Cosmology Seminar <br> U. Illinois, Urbana-Champaign, IL | September, 2025 | invited talk |
+
+<br>
+
+##### Past
+
+| Event        | Date           | Type |
+| :----------- | :------------  | :--- |
+| Cosmology From Home Conference <br> Virtual | June, 2025 | contributed talk |
+| Cosmology Seminar <br> U. Wisconsin, Madison, WI | May, 2025 | invited talk |
+| Multicolor LIM Conference <br> IWH, Heidelberg, Germany | December, 2024 | contributed talk |
+| NASA Hubble Symposium <br> | September, 2024 | contributed talk |
+| 243th AAS Meeting <br> New Orleans, LA | January, 2024 | contributed talk
+| Theoretical Cosmology Seminar <br> Johns Hopkins, Baltimore, MD | December, 2023 | invited talk |
+| NASA Hubble Symposium <br> Cambridge, MA | September, 2023 | contributed talk |
+| Wisconsin 21 cm Workshop <br> U. Wisconsin, Madison, WI | August, 2022 | contributed talk |
+| 3rd URSI Atlantic Radio Science Meeting <br> Gran Canaria, Spain | June, 2022 | invited talk |
+| ASTRON/JIVE Colloquim <br> ASTRON, Dwingeloo, Netherlands | March, 2022 | invited talk |
+| Royal Astronomical Society Specialist Discussion <br> Virtual | December, 2021 | invited talk |
+| Science at Low Frequencies <br> Virtual | December, 2021 | invited talk |
+| Astrophysics Seminar <br> Johns Hopkins, Baltimore, MD | November, 2021 | invited talk |
+| INAF Joint Astrophysics Colloquium <br> INAF, Bologna, Italy| November, 2021 | invited talk |
+| Pappalardo Research Symposium <br> MIT, Cambridge, MA | May, 2021 | invited talk |
+| A Precursor View of the SKA Sky <br> Virtual | March, 2021 | invited talk |
+| First Billion Years Conference <br> IIT Indore, Indore, India | January, 2020 | invited talk |
+| Observational Cosmology Seminar <br> Caltech, Pasadena, CA | December, 2019 | seminar talk |
+| CfA SMA Seminar <br> Harvard, Cambridge, MA | November, 2019 | seminar talk |
+| MKI Lunch Talks <br> MIT, Cambridge, MA | November, 2019 | seminar talk |
+| BCCP Cosmology Workshop <br> Berkeley, CA | January, 2018 | invited talk |
+| JILA Astrophysics Seminar <br> U. Colorado, Boulder, CO| October, 2017 | invited talk |
+| NASA Machine Learning Workshop <br> Ames Research Center, CA| August, 2017 | invited talk |
+
+
+

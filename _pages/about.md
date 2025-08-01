@@ -36,6 +36,19 @@ This framework will be a critical step in suppressing systematics to the level n
 Previously, I was a <a href="https://physics.mit.edu/research/pappalardo-fellowships-in-physics/" target="_blank">Pappalardo Fellow</a> at MIT. I received a PhD in astrophysics from UC Berkeley in 2020, and a BS in physics and astrophysics at the University of Michigan in 2015.
 
 ---
+
+##### Upcoming Talks
+
+| Event        | Date           | Type |
+| :----------- | :------------  | :--- |
+| International Conference on Particle Physics & Cosmology <br> CMU, Pittsburgh, PA | October, 2025 | research talk |
+| NASA Hubble Symposium <br> Baltimore, MD | October, 2025 | research talk |
+| 21cm Global Signal Conference <br> Caltech, Pasadena, CA | September, 2025 | research talk |
+| Astronomy Colloquium <br> U. Toledo, Toledo, OH | September, 2025 | invited talk |
+| HEP-Astro Seminar <br> U. Michigan, Ann Arbor, MI | September, 2025 | invited talk |
+| Astrophysics & Cosmology Seminar <br> U. Illinois, Urbana-Champaign, IL | September, 2025 | invited talk |
+
+---
 <img src="assets/img/envelope-regular.svg" width="17" height="17">
 <a href="mailto:nkern@umich.edu" style="color:gray">nkern@umich.edu</a>
 <br>
