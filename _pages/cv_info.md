@@ -8,8 +8,8 @@
 ---
 
 ### Appointments
-- NASA Hubble Fellow, University of Michigan, 2023 -- present
-- Pappalardo Fellow, Massachusetts Institute of Technology, 2020 -- 2023
+- 2023 -- present, NASA Hubble Fellow, at University of Michigan
+- 2020 -- 2023, Pappalardo Fellow, at Massachusetts Institute of Technology
 
 ---
 
