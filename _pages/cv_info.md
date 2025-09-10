@@ -15,7 +15,9 @@
 
 ### Selected Publications
 
-Lead author (9), \*student-advised (4). See my <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A%22Kern%2C%20Nicholas%20S%22%20year%3A2010-2030&sort=date%20desc%2C%20bibcode%20desc" target="_blank">ADS library</a> for a full list of publications.
+Lead author (9), \*student-advised (5). See my <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A%22Kern%2C%20Nicholas%20S%22%20year%3A2010-2030&sort=date%20desc%2C%20bibcode%20desc" target="_blank">ADS library</a> for a full list of publications.
+
+\*Kim, H., Hewitt, J., **Kern, N.** et al. 2025, "Exploring One-point Statistics in HERA Phase I Data: Effects of Foregrounds and Systematics on Measuring One-Point Statistics." Submitted to ApJ
 
 **Kern, N.** 2025, "A Differentiable, End-to-End Forward Model for 21 cm Cosmology: Estimating the Foreground, Instrument, and Signal Joint Posterior." <a href="https://academic.oup.com/mnras/article/541/2/687/8169320" target="_blank">MNRAS 541 687K</a>, <a href="https://arxiv.org/abs/2504.07090" target="_blank">arXiv:2504.07090</a>
 
@@ -56,7 +58,8 @@ HERA Collaboration 2022, including **Kern, N.** (lead author), "First Results fr
 | 21cm Global Signal Conference <br> Caltech, Pasadena, CA | September, 2025 | contributed talk |
 | Astronomy Colloquium <br> U. Toledo, Toledo, OH | September, 2025 | invited talk |
 | HEP-Astro Seminar <br> U. Michigan, Ann Arbor, MI | September, 2025 | invited talk |
-| Astrophysics & Cosmology Seminar <br> U. Illinois, Urbana-Champaign, IL | September, 2025 | invited talk |
+| Cosmology Seminar <br> U. Illinois, Urbana-Champaign, IL | September, 2025 | invited talk |
+| Astronomy Colloquium <br> U. Illinois, Urbana-Champaign, IL | September, 2025 | invited talk |
 
 <br>
 
@@ -87,6 +90,5 @@ HERA Collaboration 2022, including **Kern, N.** (lead author), "First Results fr
 | BCCP Cosmology Workshop <br> Berkeley, CA | January, 2018 | invited talk |
 | JILA Astrophysics Seminar <br> U. Colorado, Boulder, CO| October, 2017 | invited talk |
 | NASA Machine Learning Workshop <br> Ames Research Center, CA| August, 2017 | invited talk |
-
 
 
