@@ -41,6 +41,7 @@ Previously, I was a <a href="https://physics.mit.edu/research/pappalardo-fellows
 
 | Event        | Date           | Type |
 | :----------- | :------------  | :--- |
+| Michigan AI Summit <br> Ann Arbor, MI | November, 2025 | research talk |
 | International Conference on Particle Physics & Cosmology <br> CMU, Pittsburgh, PA | October, 2025 | research talk |
 | NASA Hubble Symposium <br> Baltimore, MD | October, 2025 | research talk |
 | 21cm Global Signal Conference <br> Caltech, Pasadena, CA | September, 2025 | research talk |

@@ -53,6 +53,7 @@ HERA Collaboration 2022, including **Kern, N.** (lead author), "First Results fr
 
 | Event        | Date           | Type |
 | :----------- | :------------  | :--- |
+| Michigan AI Summit <br> Ann Arbor, MI | November, 2025 | contributed talk |
 | Cosmo-25 Conference <br> Pittsburgh, PA | October, 2025 | contributed talk |
 | NASA Hubble Symposium <br> Baltimore, MD | October, 2025 | contributed talk |
 | 21cm Global Signal Conference <br> Caltech, Pasadena, CA | September, 2025 | contributed talk |
