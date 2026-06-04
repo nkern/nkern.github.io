@@ -812,7 +812,7 @@ footer.sticky-bottom {
 
 // Rouge Color Customization
 figure.highlight {
-  margin: 0 0 1rem;
+  margin: 6px 6px 1rem;
 }
 
 pre {
@@ -1071,4 +1071,17 @@ nav[data-toggle="toc"] {
     margin-bottom: 0;
     padding-top: 0.5rem;
   }
+}
+
+.large-profile-img {
+    max-width: 350px !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.profile.float-right:has(.large-profile-img) {
+    max-width: 350px; /* Forces the container to match the image width */
+    width: 100%;
+    margin-left: 10px; /* Ensures a clean gap between the image and your text */
+    margin-right: 0 !important; /* Prevents it from breaking past the right boundary */
 }

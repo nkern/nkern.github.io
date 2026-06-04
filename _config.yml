@@ -192,6 +192,7 @@ highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter_opts:
+    default_lang: python
     css_class: 'highlight'
     span:
       line_numbers: false

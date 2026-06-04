@@ -16,6 +16,13 @@ profiles:
     more_info:
 
   - align: right
+    image: cosmo_diff.png
+    content: profile_cosmodiff_code.md
+    image_class: "large-profile-img"
+    image_circular: false
+    more_info:
+
+  - align: right
     image: h1c_idr2_flow.png
     content: profile_heracal.md
     image_circular: false # crops the image to make it circular

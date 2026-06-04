@@ -1,4 +1,4 @@
-### Improved Limits on the 21 cm EoR Power Spectrum from HERA Phase I
+### New Limits on the 21 cm EoR Power Spectrum from HERA Phase I: Constraining the Heating of the z>8 IGM by the First X-Ray Sources
 
 HERA Collaboration 2022a (lead author: Kern) | 
 <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac1c78" target="_blank">ApJ, 925, 221</a>
@@ -22,4 +22,5 @@ HERA Collaboration 2022b |
 |
 <a href="https://arxiv.org/abs/2108.07282" target="_blank">arxiv:2108.07282</a>
 
-This companion paper used a suite of theoretical methods to interpret HERA's first power spectrum upper limits and set constraints on the properties of the intergalactic medium (IGM) at redshifts 8 and 10.4. Principally, this analysis shows that the HERA limits require the IGM to be heated above its adiabatic cooling limit by z=8 (purple arrow). This implies that early X-ray sources from the first galaxies (e.g. from high-mass X-ray binaries) must have been more luminous than their local-universe analogues, and is consistent with a population of low-metallicity HMXB. This is the most stringent constraint on the X-ray properties of compact objects at Cosmic Dawn to date.
+This companion paper used a suite of theoretical methods to interpret HERA's first power spectrum upper limits and set constraints on the properties of the intergalactic medium (IGM) at redshifts 8 and 10.4. Principally, this analysis shows that the HERA limits require the IGM to be heated above its adiabatic cooling limit by z=8 (purple arrow), which is not a scenario ruled out by existing CMB and HST observations. This implies that early X-ray sources from the first galaxies (e.g. from high-mass X-ray binaries) must have been more luminous than their local-universe analogues, and is consistent with a population of low-metallicity HMXB. This is the most stringent constraint on the X-ray properties of compact objects at Cosmic Dawn to date.
+
