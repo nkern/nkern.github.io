@@ -1,4 +1,4 @@
-[Updated July, 2025]
+[Updated June, 2026]
 
 ### Education
 - Ph.D., Astrophysics, University of California, Berkeley, 2020
@@ -17,7 +17,7 @@
 
 Lead author (9), \*student-advised (5). See my <a href="https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A%22Kern%2C%20Nicholas%20S%22%20year%3A2010-2030&sort=date%20desc%2C%20bibcode%20desc" target="_blank">ADS library</a> for a full list of publications.
 
-\*Kim, H., Hewitt, J., **Kern, N.** et al. 2025, "Exploring One-point Statistics in HERA Phase I Data: Effects of Foregrounds and Systematics on Measuring One-Point Statistics." Submitted to ApJ
+\*Kim, H., Hewitt, J., **Kern, N.** et al. 2025, "Exploring One-point Statistics in HERA Phase I Data: Effects of Foregrounds and Systematics on Measuring One-Point Statistics." <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae032e" target="_blank">ApJ 993 189K</a>, <a href="https://arxiv.org/abs/2511.02190" target="_blank">arXiv:2511.02190</a>
 
 **Kern, N.** 2025, "A Differentiable, End-to-End Forward Model for 21 cm Cosmology: Estimating the Foreground, Instrument, and Signal Joint Posterior." <a href="https://academic.oup.com/mnras/article/541/2/687/8169320" target="_blank">MNRAS 541 687K</a>, <a href="https://arxiv.org/abs/2504.07090" target="_blank">arXiv:2504.07090</a>
 
@@ -49,10 +49,12 @@ HERA Collaboration 2022, including **Kern, N.** (lead author), "First Results fr
 
 ### Selected Talks
 
-##### Upcoming
+##### Past
 
 | Event        | Date           | Type |
 | :----------- | :------------  | :--- |
+| MIfA Colloquium <br> U. Minnesota, Minneapolis, MN | February, 2026 | invited talk |
+| Special Colloquium <br> U. Toledo, Toledo, OH | February, 2026 | invited talk |
 | Michigan AI Summit <br> Ann Arbor, MI | November, 2025 | contributed talk |
 | Cosmo-25 Conference <br> Pittsburgh, PA | October, 2025 | contributed talk |
 | NASA Hubble Symposium <br> Baltimore, MD | October, 2025 | contributed talk |
@@ -61,13 +63,6 @@ HERA Collaboration 2022, including **Kern, N.** (lead author), "First Results fr
 | HEP-Astro Seminar <br> U. Michigan, Ann Arbor, MI | September, 2025 | invited talk |
 | Cosmology Seminar <br> U. Illinois, Urbana-Champaign, IL | September, 2025 | invited talk |
 | Astronomy Colloquium <br> U. Illinois, Urbana-Champaign, IL | September, 2025 | invited talk |
-
-<br>
-
-##### Past
-
-| Event        | Date           | Type |
-| :----------- | :------------  | :--- |
 | Cosmology From Home Conference <br> Virtual | June, 2025 | contributed talk |
 | Cosmology Seminar <br> U. Wisconsin, Madison, WI | May, 2025 | invited talk |
 | Multicolor LIM Conference <br> IWH, Heidelberg, Germany | December, 2024 | contributed talk |
