@@ -1,17 +1,15 @@
 ---
-layout: profiles
+layout: page
 permalink: /teaching/
 title: teaching
-description: <p>See below for some of the courses that I've designed and taught.</p>
+description: Course materials, schedules, and resources for classes taught.
 nav: true
-nav_order: 3
-
-profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-  - align: left
-    content: profile_astro9.md
-
-  - align: left
-    content: profile_champ.md
+nav_order: 6
+calendar: true
 ---
+
+This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+
+{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+
+{% include courses.liquid %}

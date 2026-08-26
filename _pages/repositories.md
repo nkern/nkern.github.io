@@ -1,45 +1,47 @@
 ---
-layout: profiles
-permalink: /code/
-title: code
-description: <p>Some of the open-source projects I work on. See my <a href="https://github.com/nkern">GitHub page</a> for a more complete list.</p>
+layout: page
+permalink: /repositories/
+title: repositories
+description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
 nav: true
-nav_order: 3
-
-profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-  - align: right
-    image: icon_dark.jpg
-    content: profile_bayeslim_code.md
-    image_circular: false # crops the image to make it circular
-    more_info:
-
-  - align: right
-    image: cosmo_diff.png
-    content: profile_cosmodiff_code.md
-    image_class: "large-profile-img"
-    image_circular: false
-    more_info:
-
-  - align: right
-    image: h1c_idr2_flow.png
-    content: profile_heracal.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>A software flowchart for the HERA analysis pipeline.</p>
-
-  - align: right
-    image: py21cmnet.png
-    content: profile_py21cmnet.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>Cosmological image segmentation with convolutional neural networks.</p>
-
-  - align: right
-    image: comparison_tri_plot.png
-    content: profile_emupy.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>Posterior inference of a Cosmic Dawn simulation, accelerated with emulators.</p>
+nav_order: 4
 ---
+
+{% if site.data.repositories.github_users %}
+
+## GitHub users
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for user in site.data.repositories.github_users %}
+    {% include repository/repo_user.liquid username=user %}
+  {% endfor %}
+</div>
+
+---
+
+{% if site.repo_trophies.enabled %}
+{% for user in site.data.repositories.github_users %}
+{% if site.data.repositories.github_users.size > 1 %}
+
+  <h4>{{ user }}</h4>
+  {% endif %}
+  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% include repository/repo_trophies.liquid username=user %}
+  </div>
+
+---
+
+{% endfor %}
+{% endif %}
+{% endif %}
+
+{% if site.data.repositories.github_repos %}
+
+## GitHub Repositories
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for repo in site.data.repositories.github_repos %}
+    {% include repository/repo.liquid repository=repo %}
+  {% endfor %}
+</div>
+{% endif %}
