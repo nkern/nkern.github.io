@@ -4,7 +4,7 @@ permalink: /code/
 title: code
 description: <p>Some of the open-source projects I work on. See my <a href='https://github.com/nkern'>GitHub page</a> for a more complete list.</p>
 nav: true
-nav_order: 3
+nav_order: 2
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
