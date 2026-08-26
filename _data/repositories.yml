@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - nkern
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - nkern/BayesLIM
+  - nkern/py21cmnet
+  - nkern/cosmo_diffusion
+  - BayesLIM/emupy

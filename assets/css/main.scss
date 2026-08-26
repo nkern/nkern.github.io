@@ -1,0 +1,224 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough).
+# NOTE: This file is a LOCAL OVERRIDE of al_folio_core's assets/css/main.scss.
+# It reproduces the gem's @use chain (so all theme styles still load), then
+# appends PaperMod-inspired typography/code overrides at the end. If a future
+# al_folio_core release adds new partials to its main.scss, mirror them here.
+---
+@charset "utf-8";
+
+/* Built-in Sass modules */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure design tokens BEFORE loading any partials. */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default: "930px" }}
+);
+
+/* Gem partials (must match al_folio_core/assets/css/main.scss) */
+@use "themes";
+@use "layout";
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* ============================================================================
+   PaperMod-inspired overrides
+   These plain (unlayered) rules load after the gem styles and Tailwind's
+   @layer base, so they win without !important. Inspired by hugo-PaperMod
+   (e.g. https://lilianweng.github.io/).
+   ========================================================================== */
+
+:root {
+  --pm-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --pm-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --pm-radius: 8px;
+
+  /* Accent / link color — cornflower blue, matching the previous site (light) */
+  --global-theme-color: #6495ed;
+  --global-hover-color: #6495ed;
+
+  /* Footer: match the page instead of a dark bar */
+  --global-footer-bg-color: var(--global-bg-color);
+  --global-footer-text-color: var(--global-text-color-light);
+  --global-footer-link-color: var(--global-theme-color);
+
+  /* Code colors — light theme */
+  --pm-code-inline-bg: #f5f5f5;
+  --pm-code-inline-text: #1f1f1f;
+  --pm-code-block-bg: #f6f8fa;
+  --pm-code-block-text: #24292e;
+  --pm-code-border: #e6e8eb;
+}
+
+html[data-theme="dark"] {
+  /* Accent / link color — cyan, matching the previous site (dark) */
+  --global-theme-color: #2698ba;
+  --global-hover-color: #2698ba;
+
+  /* Footer: match the page instead of an inverted bar (beats gem dark rule) */
+  --global-footer-bg-color: var(--global-bg-color);
+  --global-footer-text-color: var(--global-text-color-light);
+  --global-footer-link-color: var(--global-theme-color);
+
+  /* Code colors — dark theme (PaperMod uses ~#1c1d21 blocks) */
+  --pm-code-inline-bg: rgba(255, 255, 255, 0.09);
+  --pm-code-inline-text: #e6e6e6;
+  --pm-code-block-bg: #1c1d21;
+  --pm-code-block-text: #e6e6e6;
+  --pm-code-border: rgba(255, 255, 255, 0.08);
+}
+
+/* ---- Base text: system font stack, readable weight & rhythm ---- */
+body {
+  font-family: var(--pm-sans);
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+li {
+  line-height: 1.6;
+}
+
+/* ---- Headings: bold like PaperMod, tighter leading, slightly smaller ---- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--pm-sans);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+h4 {
+  font-size: 1.15rem;
+}
+
+/* Author name "offset" look — the layout bold-wraps only the first name, so
+   make the base weight light and let that span stay bold, giving bold first
+   name + light last name. Applied to both the about-page heading (scoped via
+   :has so blog post titles keep their weight) and the navbar brand, so they
+   match. */
+.post-title:has(.font-weight-bold),
+.navbar-brand.title {
+  font-weight: 300;
+}
+
+/* Footer now shares the page background — add a subtle divider for separation */
+footer.fixed-bottom,
+footer.sticky-bottom {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+/* Compact footer: al-folio pads sticky-bottom 40px top/bottom — slim it down */
+footer.sticky-bottom {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  font-size: 0.8rem;
+}
+
+/* Image captions / "more-info" text below images: al-folio renders these in
+   monospace (courier). Use a smaller version of the normal (sans) font. */
+.profile .more-info {
+  font-family: var(--pm-sans);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+/* Drop the box-shadow al-folio puts on images (z-depth-1) */
+img.z-depth-1 {
+  box-shadow: none;
+}
+
+/* The profiles layout ignores per-image width/class, so widen the wide
+   cosmo_diff banner (4:1) on the code page by targeting its alt filename. */
+@media (min-width: 576px) {
+  .profile:has(img[alt="cosmo_diff.png"]) {
+    width: 55%;
+  }
+}
+
+/* ---- Inline code ---- */
+code {
+  font-family: var(--pm-mono);
+  background-color: var(--pm-code-inline-bg);
+  color: var(--pm-code-inline-text);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-size: 0.85em;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* ---- Code blocks ---- */
+pre {
+  font-family: var(--pm-mono);
+  background-color: var(--pm-code-block-bg);
+  color: var(--pm-code-block-text);
+  border: 1px solid var(--pm-code-border);
+  border-radius: var(--pm-radius);
+  padding: 1rem 1.15rem;
+  font-size: 0.85em;
+  line-height: 1.55;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Rouge structure: figure.highlight > div.code-display-wrapper > pre > code.
+   The <pre> (styled above) is the visible block; keep the wrappers transparent
+   so the block's background/rounding shows cleanly. */
+figure.highlight,
+div.highlight {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  border-radius: var(--pm-radius);
+}
+
+/* The pygments syntax themes set `.highlight pre { background }` (specificity
+   0,1,1) and are injected AFTER main.css, so a plain `pre` rule can't win.
+   This higher-specificity rule keeps the block background on our theme-aware
+   PaperMod variable (light #f6f8fa / dark #1c1d21) in both modes. */
+body .highlight pre {
+  background-color: var(--pm-code-block-bg);
+}
+
+/* Code spans inside a block inherit the block styling, not the inline pill */
+pre code {
+  font-family: var(--pm-mono);
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font-size: inherit;
+  white-space: inherit;
+}

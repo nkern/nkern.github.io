@@ -1,18 +1,20 @@
 name: Docker Image CI
 
 on:
-  push:
-    branches:
-      - master
-      - main
-    paths:
-      - ".github/workflows/deploy-image.yml"
-      - "bin/entry_point.sh"
-      - "Dockerfile"
-      - "Gemfile"
-      - "Gemfile.lock"
-      - "package.json"
-      - "package-lock.json"
+  # Auto-trigger paused — run manually from the Actions tab. Uncomment to re-enable:
+  # push:
+  #   branches:
+  #     - master
+  #     - main
+  #   paths:
+  #     - ".github/workflows/deploy-image.yml"
+  #     - "bin/entry_point.sh"
+  #     - "Dockerfile"
+  #     - "Gemfile"
+  #     - "Gemfile.lock"
+  #     - "package.json"
+  #     - "package-lock.json"
+  workflow_dispatch:
 
 jobs:
   build:

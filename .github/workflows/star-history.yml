@@ -1,18 +1,14 @@
 name: Update star history chart
 
 on:
-  push:
-    branches:
-      - main
-    # The job commits the regenerated SVGs back to main. Ignoring them here
-    # means the bot's own commit — which touches nothing else — cannot retrigger
-    # this workflow. (GitHub also declines to raise `push` events for commits
-    # made with GITHUB_TOKEN, so this is the second of two guards.)
-    paths-ignore:
-      - "assets/img/star-history-*.svg"
-  # Stars keep accruing even when nobody pushes, so refresh weekly regardless.
-  schedule:
-    - cron: "17 4 * * 1"
+  # Auto-triggers paused — run manually from the Actions tab. Uncomment to re-enable:
+  # push:
+  #   branches:
+  #     - main
+  #   paths-ignore:
+  #     - "assets/img/star-history-*.svg"
+  # schedule:
+  #   - cron: "17 4 * * 1"
   workflow_dispatch:
 
 permissions:
