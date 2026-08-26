@@ -1,4 +1,4 @@
-### <a class="table" href="/bayeslim">BayesLIM</a>
+### <a href="/bayeslim">BayesLIM</a>
 
 <img src="../assets/img/square-github.svg" width="17" height="17">
 <a href="https://github.com/nkern/BayesLIM" target="_blank">github/BayesLIM</a>

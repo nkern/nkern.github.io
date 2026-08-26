@@ -1,4 +1,4 @@
-### <a class="table" href="/bayeslim">The BayesLIM Project</a>
+### <a href="/bayeslim">The BayesLIM Project</a>
 
 Kern 2025 | 
 <a href="https://academic.oup.com/mnras/article/541/2/687/8169320" target="_blank">MNRAS, 541, 687 </a> |

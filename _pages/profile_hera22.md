@@ -10,7 +10,7 @@ The <a href="https://reionization.org/" target="_blank">Hydrogen Epoch of Reioni
 <br>
 
 <div class="profile float-right">
-  {%- include figure.html
+  {%- include figure.liquid
   path="assets/img/hera_Ts.png"
   class="img-fluid z-depth-0 rounded" -%}
   <div class="more-info">

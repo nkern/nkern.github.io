@@ -15,7 +15,7 @@ Precision calibration is fundamental to 21 cm science. In this paper, we investi
 <br>
 
 <div class="profile float-left">
-  {%- include figure.html
+  {%- include figure.liquid
   path="assets/img/hera_avg_pspec.png"
   class="img-fluid z-depth-0 rounded" -%}
   <div class="more-info">
