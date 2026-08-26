@@ -1,14 +1,16 @@
 name: Prettier code formatter
 
 on:
-  pull_request:
-    branches:
-      - master
-      - main
-  push:
-    branches:
-      - master
-      - main
+  # Auto-triggers paused — run manually from the Actions tab. Uncomment to re-enable:
+  # pull_request:
+  #   branches:
+  #     - master
+  #     - main
+  # push:
+  #   branches:
+  #     - master
+  #     - main
+  workflow_dispatch:
 
 jobs:
   check:

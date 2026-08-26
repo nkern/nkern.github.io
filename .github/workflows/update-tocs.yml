@@ -2,13 +2,14 @@ name: Update TOCs
 # This workflow automatically updates the Table of Contents (TOC) in markdown files
 
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - "*.md"
-      - "docs/*.md"
+  # Auto-trigger paused — run manually from the Actions tab. Uncomment to re-enable:
+  # push:
+  #   branches:
+  #     - main
+  #     - master
+  #   paths:
+  #     - "*.md"
+  #     - "docs/*.md"
   workflow_dispatch:
 
 permissions:
