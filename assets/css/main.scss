@@ -144,6 +144,17 @@ footer.sticky-bottom {
   font-size: 0.8rem;
 }
 
+/* Blog-post figures without an explicit width (e.g. nbconvert matplotlib
+   outputs) — cap and center so wide panels don't dominate the column.
+   Hand-sized images (those with a width attribute, like the GRF post's
+   side-by-side pairs) are left untouched. */
+.post-content img:not([width]) {
+  display: block;
+  max-width: min(650px, 100%);
+  height: auto;
+  margin: 1.2rem auto;
+}
+
 /* Image captions / "more-info" text below images: al-folio renders these in
    monospace (courier). Use a smaller version of the normal (sans) font. */
 .profile .more-info {
