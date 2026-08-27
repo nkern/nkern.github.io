@@ -6,7 +6,7 @@ subtitle: Research Fellow | astrophysics & cosmology, radio astronomy, machine l
 
 profile:
   align: right
-  image: prof_pic_bright.jpg
+  image: headshot_edit_bright.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
 #    <p>NASA Hubble Fellow</p>
