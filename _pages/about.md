@@ -30,9 +30,11 @@ latest_posts:
 
 I am a
 <a href="https://www.stsci.edu/stsci-research/fellowships/nasa-hubble-fellowship-program/2023-nhfp-fellows#section-0067b060-4e8b-412b-ac69-c5a7a35e2e6b" target="_blank">NASA Hubble Fellow</a> based at the University of Michigan.
-I am a data-oriented researcher working at the interface of high-redshift astrophysics & cosmology, radio astronomical observation and machine learning.
+I am a researcher working at the interface of high-redshift astrophysics & cosmology, radio astronomical observation, and ML/AI for science.
 My research goals are to use next-generation radio telescopes to map the high-redshift universe with unprecedented statistical precision, enabling us to tap into a trove of currently unharnessed cosmological information.
 To do this, I develop novel algorithms and inference frameworks to robustly characterize weak signals in noisy, large-scale datasets.
+I am also actively involved in the development of new ML/AI tools for pushing the frontier of cosmological & astrophysical inference with large observational datasets and simulations.
+
 Some of the broad questions my research aims to address are:
 
 - How did the first stars, black holes, and galaxies form, and how did their radiative feedback impact the surrounding primordial hydrogen?
@@ -41,7 +43,7 @@ Some of the broad questions my research aims to address are:
 
 I leverage data from <a href="https://reionization.org/" target="_blank">powerful radio telescopes</a>, and design novel, ML-driven analysis frameworks for addressing these questions.
 Some of my <a href="/bayeslim">current work</a> is in developing the first fully end-to-end and differentiable Bayesian forward model for 21cm line intensity mapping telescopes that will reveal the universe's structure at early times.
-I am also <a href='/research'>working on</a> understanding how generative models can be reliably applied to statistical inference problems within the physical sciences, with a focus on generalization and model misspecification.
+I am also <a href='/research'>working on</a> understanding how generative models can be reliably applied to statistical inference problems within the physical sciences, with a focus on generalization, model mis-specification, and robust probability density calibration for scientific inference.
 
 Previously, I was a <a href="https://physics.mit.edu/research/pappalardo-fellowships-in-physics/" target="_blank">Pappalardo Fellow</a> at MIT. I received a PhD in astrophysics from UC Berkeley in 2020, and a BS in physics and astrophysics at the University of Michigan in 2015.
 
