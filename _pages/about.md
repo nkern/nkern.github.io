@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research Fellow | astrophysics & cosmology, radio astronomy, machine learning <br> Ann Arbor, MI, USA
+subtitle: Research Fellow | astrophysics & cosmology, ML/AI for science <br> Ann Arbor, MI, USA
 
 profile:
   align: right
@@ -30,8 +30,8 @@ latest_posts:
 
 I am a
 <a href="https://www.stsci.edu/stsci-research/fellowships/nasa-hubble-fellowship-program/2023-nhfp-fellows#section-0067b060-4e8b-412b-ac69-c5a7a35e2e6b" target="_blank">NASA Hubble Fellow</a> based at the University of Michigan.
-I am a researcher working at the interface of high-redshift astrophysics & cosmology, radio astronomical observation, and ML/AI for science.
-My research goals are to use next-generation radio telescopes to map the high-redshift universe with unprecedented statistical precision, enabling us to tap into a trove of currently unharnessed cosmological information.
+I am a researcher working at the interface of astrophysics & cosmology and ML/AI for science.
+My research goals are to use next-generation telescopes to map the universe with unprecedented statistical precision, enabling us to tap into a trove of currently unharnessed cosmological information to fuel new discoveries.
 To do this, I develop novel algorithms and inference frameworks to robustly characterize weak signals in noisy, large-scale datasets.
 I am also actively involved in the development of new ML/AI tools for pushing the frontier of cosmological & astrophysical inference with large observational datasets and simulations.
 

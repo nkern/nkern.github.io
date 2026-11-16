@@ -2,8 +2,7 @@
 
 Pan and Kern (ML for Physical Sciences 2026) |
 <a href="https://arxiv.org/pdf/2610.37825" target="_blank">arxiv:2610.37825</a>
-
-<br>
+|
 <img src="../assets/img/square-github.svg" width="17" height="17">
 <a href="https://github.com/nkern/cosmo_diffusion" target="_blank">nkern/cosmo_diffusion</a>
 |
