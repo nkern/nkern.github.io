@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Three ways I'm using AI in my research, and reflections on AI in science
+title: Three ways I'm using AI agents in my research, and reflections on agents in science
 date: 2026-06-04
 tags: ai llm
 author: Nicholas Kern
@@ -14,11 +14,11 @@ mermaid:
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-I've recently been integrating AI coding tools more deeply into my work, and I wanted to give a summary of i) how I'm using these tools in my research, ii) how I think it's enabling me to do better work, iii) how in many ways I'm enjoying my research more than ever before, and iv) some pitfalls and concerns I have with these tools. I'll go through three recent projects I've started (and am now nearly finished with) in order of increasing AI-integration in the work.
-All of this has been started over the past few months in the summer of 2026: something that probably would have taken me twice as long a few years ago. All of these projects are also in collaboration with PhD students at U. Michigan.
+I've been integrating agentic AI coding tools more deeply into my work for some time now, and I wanted to give a summary of i) how I'm using these tools in my research, ii) how I think it's enabling me to do better work, iii) how in many ways I'm enjoying my research more than ever before, and iv) some pitfalls and concerns I have with these tools. I'll go through three recent projects I've started (and am now nearly finished with) in order of increasing AI-integration in the work.
+All of this work was done primarily over a few months in the summer of 2026 in partnership with PhD students at U. Michigan: something that would have taken us at least twice as long a few years ago. 
 
 
-## Project 1: claude as a coding tool
+## Project 1: claude as a coding tool 💻
 ##### training and ablating diffusion models for cosmology
 
 Working with UMich Phd student Jiaming Pan, I am exploring the generalizability of diffusion models as a function of their training data, and the impact this has on how they are used downstream for scientific inference problems.
@@ -33,20 +33,19 @@ After iterating and realizing I needed more complex data pre-processing after th
 The takeaway: AI coding tools helped me write this framework faster, *and also probably better* than what I could have done on my own given a few week timeline. A big part of *how* I use AI coding tools is very collaborative. 
 
 
-
-## Project 2: claude for (guided) applied math<
+## Project 2: claude for (guided) applied math 🔢
 ##### scaling-up Gaussian processes for sparse, structured cosmology data
 
 
-## Project 3: claude for (guided) open-ended physics
+## Project 3: claude for (guided) open-ended physics ⚛️
 ##### implementing semi-numerical cosmological radiative transfer physics
 
 
-## How it's impacting my research workflow
+## How it's impacting my research workflow 🚀
 ##### this is the most fun I've had since early grad school
 
 
-## Some of my concerns
+## Some of my concerns 🤔
 ##### lower human-colleague interaction; temptations to detach from low-level details
 
 
